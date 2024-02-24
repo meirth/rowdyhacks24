@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    max-width: 100%;
+}
+
+.performers {
+    margin-top: 30px;
+}
+
+.performer {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.performer img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.scrolling-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+}
