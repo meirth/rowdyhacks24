@@ -37,3 +37,6 @@ header img {
     overflow-x: auto;
     white-space: nowrap;
 }
+body {
+    background-color: rgb(69, 68, 68);
+}
