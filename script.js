@@ -11,8 +11,15 @@
 
 <body>
     <div className="container">
-        <header> JENNIFER LOPEZ </header>
-        <a href="nextpage.html" className="
+        <header> 
+            <h1> Ticket-Rex <h1> 
+        <a href="nextpage.html"><img sr=" " alt="Jennifer Lopez"></img></a>
+        </header>
+
+        <div classes = "performers">
+            <h2> Featured Performer </h2>
+
+        </div>
     </div>
 </body>
 </html>
