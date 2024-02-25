@@ -1,0 +1,284 @@
+<!DOCTYPE html>>
+<head>
+    <title>ticket-rex</title>
+    <meta charset="UTF-8";>
+    <link rel="stylesheet" href="style.css">;
+    <script>
+
+
+        var cart = ["VIP Package", "Floor", "Section 200", "Section 100"];
+
+        var amount = [2, 3, 4, 5];
+
+        var price = [500, 300, , 1000];
+
+
+        function fillTable(){
+           /* document.getElementById("canasta").innerHTML = "<tr> <td>barbcaoa</td>   <td>10</td> </tr>" */
+
+            var text = ""
+
+            for(var i =0; i<cart.length; i++){
+
+                text = text + "<tr>";
+                text = text + "<td>" + cart[i]; + "</td>"
+                text = text + "<td>" + amount[i]; + "</td>"
+                text = text + "<td>" + price[i]; + "</td>"
+                text = text + "</tr>";
+
+
+
+            }
+
+            document.getElementById("cart").innerHTML = text;
+        }
+
+        function Order(){
+            
+            var taco = document.getElementById("val1").value;
+
+            var cant = document.getElementById("val2").value*1;
+
+            var index = canasta.indexOf(taco);
+
+            var cartIndex = cart.indexOf(taco);
+
+            var totalAmount = 0;
+
+            var totalPrice = 0;
+
+
+            if(cant < 0){
+                alert("Please enter a positive number")
+                cant = 0;
+            }
+
+
+            if(taco == carrito[index] && cantidad[index] >= cant){
+                carritonumero[index] = carritonumero[index] + cant;
+
+                carritoprecio[index] = carritoprecio[index] + (precio[index]*cant);
+
+                cantidad[index] = cantidad[index] - cant;
+            }
+
+            for(var i=0; i<cantidad.length; i++){
+                totalcant = totalcant + carritonumero[i];
+                }
+
+                for(var i=0; i<cantidad.length; i++){
+                totalprecio = totalprecio + carritoprecio[i];
+                }
+
+            document.getElementById("carrito").style.display = "block";
+
+            document.getElementById("cantidadtotal").innerHTML = totalcant;
+
+            totalprecio = totalprecio*1.16;    
+
+            document.getElementById("preciototal").innerHTML =  Math.round(totalprecio*100)/100;
+
+            llenarTabla();
+
+            llenarCarrito();
+
+
+            
+    }
+
+    function agregar(){
+            
+            var taco = document.getElementById("val1").value;
+
+            var cant = document.getElementById("val2").value*1;
+
+        carrito.push(taco);
+        carritonumero.push(cant);
+
+        llenarTabla();
+
+        alert("agregado");
+    }
+
+    var carrito = ["Tacos de spaghetti", "Lotus Flower", "Sandwiches de Shaggy", "Sombrero de guacamole"];
+
+    var carritonumero = [0,0,0,0];
+
+    var carritoprecio = [0, 0, 0, 0];
+
+    function fillCart(){
+           /* document.getElementById("canasta").innerHTML = "<tr> <td>barbcaoa</td>   <td>10</td> </tr>" */
+        var texto = ""
+
+        for(var i =0; i<cart.length; i++){
+
+            texto = texto + "<tr>";
+            texto = texto + "<td>" + canasta[i]; + "</td>"
+            texto = texto + "<td>" + carritonumero[i]; + "</td>"
+            texto = texto + "<td>" + carritoprecio[i]; + "</td>"
+
+            texto = texto + "</tr>";
+        }
+
+        document.getElementById("carritotabla").innerHTML = texto;
+            
+        }
+
+    function pago(){
+        alert("Fuera de servicio")
+    }
+
+    </script>
+
+</head>
+<body onload="hora(), llenarTabla()">
+    
+    <div class="menu">
+
+
+        <div class="third" style="height: 100%; background: none;">
+            <div style="margin: 0 auto;">
+                <div class="third" style="height: 100%; background: none;">
+                    <a href="index2.html">menu</a>
+                </div>
+                <div class="third" style="height: 100%; background: none;">
+                    <a href="index3.html">carrito</a>
+                </div>
+                <div class="third" style="height: 100%; background: none;">
+                    <a href="index4.html" target="_blank">contacto</a>
+                </div>
+                
+            </div>
+        </div>
+    
+        
+        
+        <div class="third" style="height: 100%; background: none;">
+            <div>
+                <h1>film + tv foods</h1>
+            </div>
+        </div>
+
+        <div class="third" style="height: 100%; background: none;">
+            <div>
+                <div class="third" style="height: 100%; background: none;">
+                    <p id="resultado">
+                        0:00
+                    </p>
+                </div>
+                <div class="third" style="height: 100%; background: none;">
+                    <a href="../index.html">indice</a>
+                </div>
+                <div class="third" style="height: 100%; background: none;">
+                    <a href="index.html">inicio</a>
+                </div>
+
+            </div>
+        </div>    
+    
+    </div>
+        
+    <div class="banner">
+    
+        <img src="images/spiritedAwayFeast.png" alt="">    
+    
+    </div>
+    
+    
+    
+    
+    <div>
+        <h1>ordena ahora!</h1>
+    </div>
+    
+    
+    <div class="wrapper">
+
+        <div class="all">
+
+            <div class="half">
+                
+    
+                <div class="entradas">
+                    <input type="text" id="val1" placeholder="Articulo">
+                    <input type="text" id="val2" placeholder="Nº">
+                    
+                    <div class="button" onclick="Ordenar()" >ordenar</div>
+             
+                </div>
+                
+            </div>
+    
+            <div class="half">
+                
+                <table>
+                    <tbody>
+                        <th>articulo</th>
+                        <th>Nº</th>
+                        <th>precio</th>
+                    </tbody>
+                    <tbody id="canasta">
+
+                    </tbody>
+    
+                </table>
+    
+            </div>
+       
+    </div>
+
+    
+    
+    
+    <div class="wrapper" id="carrito" style="display: none;">
+
+        <div>
+            <h1 style="color: gray;">
+                carrito
+            </h1>
+        </div>
+
+        <div class="all">
+
+            <div class="half">
+                
+    
+                <div class="entradas">
+
+                    <h1>total (Incluye IVA)</h1>
+             
+                    
+                    <div class="button" onclick="pago()" >pagar</div>
+
+                </div>
+                
+            </div>
+    
+            <div class="half">
+                
+                <table>
+                    <tbody>
+                        <th>articulo</th>
+                        <th>Nº</th>
+                        <th>precio</th>
+                    </tbody>
+                    <tbody id="carritotabla">
+
+                    </tbody>
+                    <tbody>
+                        <th>total</th>
+                        <th id="cantidadtotal"></th>
+                        <th id="preciototal"></th>
+                    </tbody>
+    
+                </table>
+    
+            </div>
+
+    </div>
+    
+    </div>
+    
+    </html>
+    
+</body>
