@@ -17,10 +17,14 @@ ul {
     margin: 0;
 }
 
-
-.event li:first-child {
+.event li:first-child{
     text-align: center;
     margin-bottom: 10px;
+
+}
+
+.event ul {
+    text-align: center;
 }
 
 
@@ -28,10 +32,6 @@ ul {
     color: rgb(11, 10, 10); 
 }
 
-
-.event li span {
-    margin-right: 10px;
-}
 
 button {
     background-color: #b0bcc8; 
@@ -41,6 +41,7 @@ button {
     cursor: pointer;
     border-radius: 20px; 
     margin-left: 10px; 
+    display: blokc;
 }
 
 button:hover {
