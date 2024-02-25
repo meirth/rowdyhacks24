@@ -34,8 +34,7 @@ ul {
 
 
 button {
-    background-color: #b0bcc8; 
-    color: #fff; 
+    color: #0b0b0c; 
     border: none; 
     padding: 10px 20px; 
     cursor: pointer;
@@ -45,10 +44,9 @@ button {
 }
 
 button:hover {
-    background-color: #89a6c5; 
+    background: linear-gradient(to right, #9d65dd, #7707e0); 
+    color: #e5dfec; 
 }
-.custom-gradient-button {
-    background: linear-gradient(to right, #8A2BE2, #9400D3);
-    /* Other styling properties like padding, border, font, etc. */
-  }
+
+  
   
