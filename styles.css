@@ -42,4 +42,7 @@ header img {
 body {
     background-color: rgb(69, 68, 68);
 }
+ul {
+    text-align: left;
+  }
 
