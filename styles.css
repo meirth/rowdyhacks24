@@ -49,3 +49,15 @@ body {
 ul {
     text-align: left;
 }
+
+h1 {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-style: normal;
+    margin-bottom: 0px;
+}
+
+h3 {
+    margin-top: 5px;
+}
