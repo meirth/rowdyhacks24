@@ -47,5 +47,8 @@ button {
 button:hover {
     background-color: #89a6c5; 
 }
-
+.custom-gradient-button {
+    background: linear-gradient(to right, #8A2BE2, #9400D3);
+    /* Other styling properties like padding, border, font, etc. */
+  }
   
