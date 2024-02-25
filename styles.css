@@ -60,4 +60,9 @@ h1 {
 
 h3 {
     margin-top: 5px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 0px;
 }
