@@ -3,8 +3,12 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(248, 240, 240);
-}
 
+    background-image: url("C:\Users\Diego\Desktop\pain\rowdyhacks24\images\pinkdinoprints.png"); /* Replace with the actual path to your image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-size: cover; /* Scale the image to cover the entire viewport */
+    /* You can also adjust other properties like background-position if needed */
+}
 .container {
     width: 80%;
     margin: 0 auto;
@@ -44,4 +48,4 @@ body {
 }
 ul {
     text-align: left;
- 
+}
