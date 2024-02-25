@@ -1,0 +1,50 @@
+
+body {
+    background-image: url('dinoprints.png'); 
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.event li:first-child {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.event li strong {
+    color: rgb(11, 10, 10); 
+}
+
+
+.event li span {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #b0bcc8; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer;
+    border-radius: 20px; 
+    margin-left: 10px; 
+}
+
+button:hover {
+    background-color: #89a6c5; 
+}
+
+  
