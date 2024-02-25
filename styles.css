@@ -2,7 +2,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(248, 240, 240);
 }
 
 .container {
@@ -40,9 +40,8 @@ header img {
     white-space: nowrap;
 }
 body {
-    background-color: rgb(69, 68, 68);
+    background-color: rgb(255, 249, 249);
 }
 ul {
     text-align: left;
-  }
-
+ 
